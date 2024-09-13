@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: url("path-to-your-cricket-image.jpg") no-repeat center center
+    fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("DALL·E\ 2024-09-14\ 02.21.30\ -\ A\ vibrant\ image\ of\ a\ cricket\ field\ during\ a\ sunny\ day\,\ with\ green\ grass\,\ a\ cricket\ pitch\ in\ the\ center\,\ and\ stadium\ stands\ in\ the\ background.\ The\ fiel.webp");
+}
+
+.container {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1,
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.score-btn {
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #28a745; /* Green color */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.score-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+#wide,
+#no-ball {
+  background-color: #ff4500; /* Orange for Wide and No Ball */
+}
+
+#wide:hover,
+#no-ball:hover {
+  background-color: #ff6347; /* Lighter orange on hover */
+}
+
+.next-over-btn {
+  margin-top: 20px;
+  padding: 15px 50px;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #007bff; /* Blue for next over */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.next-over-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
