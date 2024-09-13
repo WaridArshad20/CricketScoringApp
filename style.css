@@ -6,27 +6,22 @@
 
 body {
   font-family: "Arial", sans-serif;
-  background: url("path-to-your-cricket-image.jpg") no-repeat center center
-    fixed;
+  background: url("ground.webp") no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("DALL·E\ 2024-09-14\ 02.21.30\ -\ A\ vibrant\ image\ of\ a\ cricket\ field\ during\ a\ sunny\ day\,\ with\ green\ grass\,\ a\ cricket\ pitch\ in\ the\ center\,\ and\ stadium\ stands\ in\ the\ background.\ The\ fiel.webp");
 }
 
 .container {
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* Semi-transparent white background */
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 15px;
   text-align: center;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 90%; /* Make sure it fits smaller screens */
 }
 
 h1,
@@ -47,15 +42,15 @@ h2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 10px; /* Reduced gap for mobile */
   margin: 20px 0;
 }
 
 .score-btn {
-  padding: 15px 30px;
-  font-size: 1.5rem;
+  padding: 10px 20px; /* Reduced padding for better fit on small screens */
+  font-size: 1.2rem; /* Smaller font size */
   color: white;
-  background-color: #28a745; /* Green color */
+  background-color: #28a745;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -63,25 +58,25 @@ h2 {
 }
 
 .score-btn:hover {
-  background-color: #218838; /* Darker green on hover */
+  background-color: #218838;
 }
 
 #wide,
 #no-ball {
-  background-color: #ff4500; /* Orange for Wide and No Ball */
+  background-color: #ff4500;
 }
 
 #wide:hover,
 #no-ball:hover {
-  background-color: #ff6347; /* Lighter orange on hover */
+  background-color: #ff6347;
 }
 
 .next-over-btn {
   margin-top: 20px;
-  padding: 15px 50px;
-  font-size: 1.5rem;
+  padding: 10px 30px; /* Reduced padding */
+  font-size: 1.2rem;
   color: white;
-  background-color: #007bff; /* Blue for next over */
+  background-color: #007bff;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -89,5 +84,26 @@ h2 {
 }
 
 .next-over-btn:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem; /* Smaller heading font size */
+  }
+
+  h2 {
+    font-size: 1.2rem; /* Smaller sub-heading */
+  }
+
+  .score-btn,
+  .next-over-btn {
+    padding: 10px 15px; /* Further reduce button padding */
+    font-size: 1rem; /* Smaller font size for buttons */
+  }
+
+  .button-container {
+    gap: 8px; /* Further reduce gap between buttons */
+  }
 }
