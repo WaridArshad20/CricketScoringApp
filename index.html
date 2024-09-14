@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cricket Scoring App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>Total Score: <span id="total-score">0</span></h1>
-        <h2>Balls Bowled in Current Over: <span id="balls-bowled">0</span></h2>
+      <h1>Total Score: <span id="total-score">0</span></h1>
+      <h2 id="overs">Overs: 0.0</h2>
 
-        <div class="button-container">
-            <button class="score-btn" id="six">6</button>
-            <button class="score-btn" id="four">4</button>
-            <button class="score-btn" id="wide">WD</button>
-            <button class="score-btn" id="single">1</button>
-            <button class="score-btn" id="double">2</button>
-            <button class="score-btn" id="no-ball">NB</button>
-        </div>
+      <div class="button-container">
+        <button class="score-btn" id="six" onclick="six()">6</button>
+        <button class="score-btn" id="four" onclick="four()">4</button>
+        <button class="score-btn" id="wide" onclick="wide()">WD</button>
+        <button class="score-btn" id="single" onclick="one()">1</button>
+        <button class="score-btn" id="double" onclick="two()">2</button>
+        <button class="score-btn" id="no-ball" onclick="noBall()">NB</button>
+      </div>
 
-        <button class="next-over-btn" id="next-over">Next Over</button>
+      <button class="timeline-btn" id="show-timeline" onclick="showTimeline()">
+        Show Score Timeline
+      </button>
+
+      <div id="score-timeline" class="timeline-container"></div>
     </div>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>

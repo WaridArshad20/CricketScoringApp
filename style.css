@@ -71,9 +71,10 @@ h2 {
   background-color: #ff6347;
 }
 
-.next-over-btn {
+/* Timeline Button */
+.timeline-btn {
   margin-top: 20px;
-  padding: 10px 30px; /* Reduced padding */
+  padding: 10px 30px;
   font-size: 1.2rem;
   color: white;
   background-color: #007bff;
@@ -83,8 +84,24 @@ h2 {
   transition: background-color 0.3s ease;
 }
 
-.next-over-btn:hover {
+.timeline-btn:hover {
   background-color: #0056b3;
+}
+
+/* Timeline Container */
+.timeline-container {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  display: none;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.timeline-container p {
+  font-size: 1rem;
+  color: #333;
 }
 
 /* Media query for smaller screens */
@@ -98,7 +115,7 @@ h2 {
   }
 
   .score-btn,
-  .next-over-btn {
+  .timeline-btn {
     padding: 10px 15px; /* Further reduce button padding */
     font-size: 1rem; /* Smaller font size for buttons */
   }
